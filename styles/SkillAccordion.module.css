@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700;900&display=swap');
+
+.container {
+    box-shadow: 0 3px 5px #c7c7c7;
+    width: 80%;
+    margin-left: auto;
+}
+
+.title {
+    font-family: 'Open Sans', sans-serif;
+    /* color: #D40136; */
+    color: #8B8B8B;
+}
+
+.blurb {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.75;
+}
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        width: 100%;
+    }
+}

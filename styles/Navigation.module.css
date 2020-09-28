@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700;900&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+.homeLogo {
+    width: 50px;
+}
+
+.linkTitle {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 0 35px 0 35px;
+    transition: ease all .5s;
+}
+
+/* Shrink padding of nav links */
+@media only screen and (max-width: 1400px) {
+    .linkTitle {
+        padding: 0 25px 0 25px;
+        transition: ease all .5s;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .linkTitle {
+        padding: 0 15px 0 15px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .container {
+        position: fixed;
+        margin: 0;
+        justify-content: center;
+        min-width: 100%;
+        background-color: #D40136;
+    }
+
+    .linkTitle {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    #homeLink {
+        padding-left: 0;
+    }
+
+    #contactLink {
+        padding-right: 0;
+    }
+
+    .homeLogo {
+        display: block;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 820px) and (orientation: landscape) {
+    .container {
+        position: fixed;
+        margin: 0;
+        justify-content: center;
+        min-width: 100%;
+        background-color: #D40136;
+    }
+
+    .linkTitle {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .homeLogo {
+        display: block;
+        width: 40px;
+    }
+}

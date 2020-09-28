@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700;900&display=swap');
+
+.container {
+    display: flex;
+}
+
+.leftSection {
+    background-color: #D40136;
+    width: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.blurbContainer {
+    color: #ffffff;
+}
+
+.blurbTitle {
+    font-size: 4vw;
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+.blurb {
+    font-size: 18px;
+    line-height: 30px;
+    line-height: 1.75;
+}
+
+.avatarImage {
+    max-width: 50%;
+    min-width: 200px;
+    align-self: center;
+    padding-top: 50px;
+}
+
+.rightSection {
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    height: 100vh;
+}
+
+.pageclipForm {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 25px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    transition: ease all .5s;
+}
+
+.inputLabel {
+    align-self: flex-start;
+    padding-bottom: 5px;
+}
+
+#message {
+    height: 30%;
+}
+
+#pageclipFormSubmit {
+    border: none;
+    background-color: #D40136;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#pageclipFormSubmit:hover {
+    background-color: #d401369c;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .blurbTitle {
+        margin-top: 60px;
+    }
+
+    .pageclipForm {
+        width: 60%;
+        transition: ease all .5s;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .blurbTitle {
+        margin-top: 50px;
+    }
+
+    .pageclipForm {
+        width: 65%;
+        transition: ease all .5s;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leftSection {
+        width: 100%;
+        height: 60vh;
+    }
+
+    .blurbContainer {
+        margin-top: 100px;
+    }
+    
+    .blurbTitle {
+        font-size: 5vw;
+    }
+    
+    .avatarImage {
+        max-width: 200px;
+        min-width: 150px;
+        padding-top: 30px;
+    }
+
+    .rightSection {
+        width: 100%;
+    }
+    
+    .pageclipForm {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .leftSection {
+        padding: 27px;
+        height: 45vh;
+        flex-direction: column-reverse;
+    }
+
+    .blurbTitle {
+        margin-top: 10px;
+    }
+    
+    .avatarImage {
+        max-width: 150px;
+        margin-top: 20px;
+    }
+
+    .rightSection {
+        height: 90vh;
+        padding-top: 0;
+    }
+
+    .blurbContainer {
+        margin-top: 0;
+    }
+
+    .rightSection {
+        height: 100%;
+        padding-top: 30px;
+    }
+
+    .pageclipForm {
+        height: 55vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .leftSection {
+        padding: 27px;
+        height: 54vh;
+        flex-direction: column;
+    }
+
+    .avatarImage {
+        max-width: 150px;
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+
+    .blurbTitle {
+        margin-top: 150px;
+    }
+
+    .blurb {
+        font-size: 17px;
+    }
+    
+    .blurbTitle {
+        font-size: 7vw;
+        text-align: center;
+    }
+
+    .rightSection {
+        height: 100%;
+        padding-top: 30px;
+    }
+
+    .pageclipForm {
+        height: 85vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .leftSection {
+        height: 48vh;
+    }
+    
+    .rightSection {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 380px) and (max-height: 670px) {
+    .leftSection {
+        height: 57vh;
+    }
+    
+    .blurbTitle {
+        margin-top: 150px;
+    }
+    
+    .rightSection {
+        padding-top: 30px;
+    }
+
+    .pageclipForm {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .leftSection {
+        height: 52vh;
+    }
+    
+    .blurbTitle {
+        margin-top: 130px;
+    }
+    
+    .pageclipForm {
+        height: 85vh;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 820px) and (orientation: landscape) {
+    .leftSection {
+        height: 100%;
+        flex-direction: row-reverse;
+        padding: 90px 50px 30px 50px;
+    }
+
+    .blurbContainer {
+        padding-left: 15px;
+        margin: 0;
+    }
+
+    .blurbTitle {
+        font-size: 4vw;
+        margin: 0;
+    }
+
+    .blurb {
+        font-size: 15px;
+    }
+
+    .avatarImage {
+        padding: 0 25px 0 0;
+        margin: 0;
+    }
+
+    .rightSection {
+        height: 150vh;
+    }
+
+    .pageclipForm {
+        height: 100%;
+    }
+}

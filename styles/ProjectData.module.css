@@ -1,0 +1,112 @@
+.navigation {
+    background-color: #D40136;
+    height: 90px;
+}
+
+.content {
+    padding: 50px;
+}
+
+.top {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 550px calc(100% - 550px - 50px);
+    grid-gap: 50px;
+    margin-bottom: 70px;
+}
+
+.title {
+    margin: 0px 0px 20px 0px;
+}
+
+.info {
+    margin-left: auto;
+    width: 100%;
+}
+
+.projectBlurb p, .lessonsBlurb p{
+    line-height: 1.75;
+    margin: 15px 0px 0px 0px;
+}
+
+.images {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.slideShow{
+    width: 550px;
+}
+
+.slide {
+    height: 375px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f5f5f5;
+}
+
+.bottom {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+@media only screen and (max-width: 770px) {
+    .navigation {
+        position: relative;
+        background-color: transparent;
+        height: 60px;
+        z-index: 100;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .slideShow {
+        width: 100%;
+        padding: 10px;
+        z-index: 0;
+    }
+
+    .slide {
+        height: 30vh;
+    }
+
+    .title {
+        margin-bottom: 5px;
+    }
+
+    .projectBlurb p, .lessonsBlurb p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 820px) and (orientation: landscape) {
+    .top {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .slideShow {
+        margin: auto;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .navigation {
+        position: relative;
+        background-color: transparent;
+        height: 60px;
+        z-index: 100;
+    }
+}
