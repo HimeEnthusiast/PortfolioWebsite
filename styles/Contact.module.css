@@ -209,7 +209,8 @@
     }
 
     .pageclipForm {
-        height: 85vh;
+        height: 70vh;
+        margin-top: 30px;
     }
 }
 
@@ -220,6 +221,11 @@
     
     .rightSection {
         padding-top: 0;
+    }
+
+    .pageclipForm {
+        height: 65vh;
+        margin-top: 50px;
     }
 }
 
@@ -237,7 +243,7 @@
     }
 
     .pageclipForm {
-        height: 100vh;
+        margin-top: 20px;
     }
 }
 
@@ -251,8 +257,8 @@
     }
     
     .pageclipForm {
-        height: 85vh;
-        margin-top: 20px;
+        height: 75vh;
+        margin-top: 40px;
     }
 }
 

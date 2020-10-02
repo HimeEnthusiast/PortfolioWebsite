@@ -139,6 +139,10 @@
     .blurbA {
         font-size: 15px;
     }
+
+    .topSection {
+        height: 35vh;
+    }
 }
 
 @media only screen and (max-width: 850px) and (orientation: landscape) {
@@ -204,11 +208,11 @@
     }
 
     .avatar {
-        min-width: 100px;
+        min-width: 150px;
     }
 
     .titleA {
-        font-size: 25px;
+        font-size: 30px;
         margin: 5px 0 8% 0;
     }
 
@@ -226,7 +230,7 @@
 
     .bottomLeftContainer {
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .blurbB {

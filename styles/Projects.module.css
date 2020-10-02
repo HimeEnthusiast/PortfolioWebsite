@@ -42,18 +42,21 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 30px;
-    padding: 20px;
+    padding: 30px;
 }
 
 @media only screen and (max-width: 800px) {
+    .navigation {
+        height: 60px;
+        background-color: transparent;
+    }
+
     .header {
         z-index: -1;
-        /* height: 30vh; */
     }
 
     .headerImage {
         background-position-y: 0px;
-        /* background-position: bottom; */
     }
 }
 
@@ -61,6 +64,10 @@
     .navigation {
         height: inherit;
         display: block;
+    }
+
+    .header, .headerImage, .headerColour {
+        height: 40vh;
     }
 
     .headerTitle {

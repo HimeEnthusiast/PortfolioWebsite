@@ -144,10 +144,6 @@
     .bottomRight {
         margin: 30px 0 65px 0;
     }
-
-    .phoneImage {
-        /* height: 70vh; */
-    }
 }
 
 @media only screen and (max-width: 600px) {

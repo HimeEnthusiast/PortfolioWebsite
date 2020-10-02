@@ -107,7 +107,7 @@ export default function Post({ projectData }) {
     };
 
     const slides = projectData.screenshots.map((image) => (
-        <div>
+        <div key={image}>
             <div className={style.slide} 
             key={image} 
             style={{backgroundImage: `url('${image}')`}}
