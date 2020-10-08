@@ -35,7 +35,7 @@ export default function Projects({ projectData }) {
 
             <div className={style.projectGrid}>
                 {projectData.map(({title, iconImage, shortDesc}) => (
-                    <ProjectCard title={title} image={iconImage} shortDesc={shortDesc}></ProjectCard>
+                    <ProjectCard key={title} title={title} image={iconImage} shortDesc={shortDesc}></ProjectCard>
                 ))}
             </div>
         </div>

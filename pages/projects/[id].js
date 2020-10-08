@@ -4,22 +4,8 @@ import Navigation from '../../components/general/Navigation'
 import Slider from "react-slick";
 import style from '../../styles/ProjectData.module.css'
 import Chip from '@material-ui/core/Chip'
-import { makeStyles } from '@material-ui/core/styles';
 import { getAllPostIds, getProjectData } from '../../lib/fetchProjects'
 import styled from 'styled-components';
-
-const useStyles = makeStyles((theme) => ({ //Chip Styles
-    root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        '& > *': {
-            margin: theme.spacing(0.5),
-            fontFamily: 'Open Sans, sans-serif',
-            backgroundColor: '#D40136',
-            color: '#ffffff'
-        },
-    },
-}));
 
 export async function getStaticPaths() {
     const paths = getAllPostIds()
@@ -47,17 +33,17 @@ function NextArrow(props) {
     );
 
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "#ffffff", boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.5)" }}
-        onClick={onClick}
-      >
-        <Arrow />
-      </div>
+        <div
+            className={className}
+            style={{ ...style, display: "block", background: "#ffffff", boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.5)" }}
+            onClick={onClick}
+        >
+            <Arrow />
+        </div>
     );
-  }
-  
-  function PrevArrow(props) {
+}
+
+function PrevArrow(props) {
     const { className, style, onClick } = props;
 
     const Arrow = () => (
@@ -65,19 +51,18 @@ function NextArrow(props) {
     )
 
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "#ffffff", boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.5)" }}
-        onClick={onClick}
-      >
-          <Arrow />
-      </div>
+        <div
+            className={className}
+            style={{ ...style, display: "block", background: "#ffffff", boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.5)" }}
+            onClick={onClick}
+        >
+            <Arrow />
+        </div>
     );
-  }
+}
 
-  //Slideshow styles
-  const StyledSlider = styled(Slider)`
-
+//Slideshow styles
+const StyledSlider = styled(Slider)`
         & .slick-next, .slick-prev {
             content: unset;
             width: unset;
@@ -90,11 +75,9 @@ function NextArrow(props) {
         & .slick-next:before, .slick-prev:before {
             content: unset;
         }
-
     `
 
 export default function Post({ projectData }) {
-    const classes = useStyles();
     const settings = { //Slideshow settings
         arrows: true,
         dots: true,
@@ -108,12 +91,38 @@ export default function Post({ projectData }) {
 
     const slides = projectData.screenshots.map((image) => (
         <div key={image}>
-            <div className={style.slide} 
-            key={image} 
-            style={{backgroundImage: `url('${image}')`}}
+            <div className={style.slide}
+                key={image}
+                style={{ backgroundImage: `url('${image}')` }}
             ></div>
         </div>
     ));
+
+    let liveExists;
+    if(projectData.liveLink) {
+        liveExists = true;
+    } else {
+        liveExists = false;
+    }
+
+    const linkButtons = () => {
+        if(liveExists) {
+            return <>
+                <button className={style.projBtn}>
+                    <a href={projectData.liveLink} target="_blank">Live View</a>
+                </button>
+                <button className={style.projBtn}>
+                    <a href={projectData.gitLink} target="_blank">Github</a>
+                </button>
+            </>
+        } else {
+            return <>
+                <button className={style.projBtn}>
+                    <a href={projectData.gitLink} target="_blank">Github</a>
+                </button>
+            </>
+        }
+    }
 
     return (
         <div className={style.container}>
@@ -134,15 +143,21 @@ export default function Post({ projectData }) {
                         </StyledSlider>
                     </div>
 
-                    {/* Project description */}
                     <div className={style.info}>
                         <h1 className={style.title}>{projectData.title}</h1>
-
-                        <div className={classes.root}>
+                        <div>
                             {projectData.tags.map((tag) => (
-                                <Chip key={tag} label={tag}></Chip>
+                                <Chip 
+                                    style={{
+                                        backgroundColor: '#D40136',
+                                        color: 'white',
+                                        margin: '4px',
+                                        fontFamily: 'Open Sans, sans-serif'
+                                    }}
+                                    key={tag} 
+                                    label={tag}>
+                                </Chip>
                             ))}
-                            {/* {projectData.tags} */}
                         </div>
 
                         <div className={style.projectBlurb} dangerouslySetInnerHTML={{ __html: projectData.projectDesc }}>
@@ -150,6 +165,11 @@ export default function Post({ projectData }) {
                         </div>
                     </div>
                 </div>
+
+                <div className={style.projLink}>
+                    {linkButtons()}
+                </div>
+
                 <div className={style.bottom}>
                     <h1 className={style.title}>Lessons Learned</h1>
 

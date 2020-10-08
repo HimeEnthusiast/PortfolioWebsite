@@ -21,7 +21,7 @@
 .blurbTitle {
     font-size: 4vw;
     margin-bottom: 10px;
-    margin-top: 70px;
+    margin-top: 10%;
 }
 
 .blurb {
@@ -31,10 +31,10 @@
 }
 
 .avatarImage {
-    max-width: 50%;
+    max-width: 250px;
     min-width: 200px;
     align-self: center;
-    padding-top: 50px;
+    padding-top: 5%;
 }
 
 .rightSection {
@@ -47,7 +47,6 @@
 .pageclipForm {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -86,187 +85,81 @@
     cursor: pointer;
 }
 
-
-@media only screen and (max-width: 1400px) {
-    .blurbTitle {
-        margin-top: 60px;
-    }
-
-    .pageclipForm {
-        width: 60%;
-        transition: ease all .5s;
-    }
-}
-
 @media only screen and (max-width: 1200px) {
-    .blurbTitle {
-        margin-top: 50px;
-    }
-
     .pageclipForm {
-        width: 65%;
-        transition: ease all .5s;
+        width: 70%;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .container {
         flex-direction: column;
+        height: 100vh;
     }
 
     .leftSection {
         width: 100%;
-        height: 60vh;
-    }
-
-    .blurbContainer {
-        margin-top: 100px;
-    }
-    
-    .blurbTitle {
-        font-size: 5vw;
-    }
-    
-    .avatarImage {
-        max-width: 200px;
-        min-width: 150px;
-        padding-top: 30px;
+        height: 40vh;
+        min-height: 350px;
     }
 
     .rightSection {
         width: 100%;
+        min-height: 70%;
     }
-    
+
+    .avatarImage {
+        padding: 2% 0 0 0;
+        width: 25%;
+        min-width: 150px;
+        max-width: 200px;
+    }
+
+    .blurbTitle {
+        margin-top: 25%;
+    }
+
+    .blurb {
+        font-size: 16px;
+    }
+
+    .pageclipForm {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .blurbTitle {
+        margin-top: 40%;
+    }
+
+    .avatarImage {
+        padding: 0;
+        min-width: 130px;
+    }
+
     .pageclipForm {
         width: 80%;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .leftSection {
-        padding: 27px;
-        height: 45vh;
-        flex-direction: column-reverse;
-    }
-
+@media only screen and (max-width: 600px) {
     .blurbTitle {
-        margin-top: 10px;
-    }
-    
-    .avatarImage {
-        max-width: 150px;
-        margin-top: 20px;
-    }
-
-    .rightSection {
-        height: 90vh;
-        padding-top: 0;
-    }
-
-    .blurbContainer {
-        margin-top: 0;
-    }
-
-    .rightSection {
-        height: 100%;
-        padding-top: 30px;
-    }
-
-    .pageclipForm {
-        height: 55vh;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .leftSection {
-        padding: 27px;
-        height: 54vh;
-        flex-direction: column;
+        margin-top: 50%;
+        font-size: 6vw;
     }
 
     .avatarImage {
-        max-width: 150px;
-        margin-top: 0px;
-        padding-top: 10px;
-    }
-
-    .blurbTitle {
-        margin-top: 150px;
-    }
-
-    .blurb {
-        font-size: 17px;
-    }
-    
-    .blurbTitle {
-        font-size: 7vw;
-        text-align: center;
-    }
-
-    .rightSection {
-        height: 100%;
-        padding-top: 30px;
-    }
-
-    .pageclipForm {
-        height: 70vh;
-        margin-top: 30px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .leftSection {
-        height: 48vh;
-    }
-    
-    .rightSection {
-        padding-top: 0;
-    }
-
-    .pageclipForm {
-        height: 65vh;
-        margin-top: 50px;
-    }
-}
-
-@media only screen and (max-width: 380px) and (max-height: 670px) {
-    .leftSection {
-        height: 57vh;
-    }
-    
-    .blurbTitle {
-        margin-top: 150px;
-    }
-    
-    .rightSection {
-        padding-top: 30px;
-    }
-
-    .pageclipForm {
-        margin-top: 20px;
-    }
-}
-
-@media only screen and (max-width: 365px) {
-    .leftSection {
-        height: 52vh;
-    }
-    
-    .blurbTitle {
-        margin-top: 130px;
-    }
-    
-    .pageclipForm {
-        height: 75vh;
-        margin-top: 40px;
+        min-width: 115px;
     }
 }
 
 @media only screen and (max-width: 820px) and (orientation: landscape) {
     .leftSection {
-        height: 100%;
+        min-height: 280px;
         flex-direction: row-reverse;
-        padding: 90px 50px 30px 50px;
+        align-items: center;
+        padding: 20px 50px 0 50px;
     }
 
     .blurbContainer {
@@ -288,11 +181,8 @@
         margin: 0;
     }
 
-    .rightSection {
-        height: 150vh;
-    }
-
     .pageclipForm {
-        height: 100%;
+        height: 160vh;
+        margin: 0;
     }
 }

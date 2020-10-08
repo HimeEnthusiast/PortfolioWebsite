@@ -1,5 +1,6 @@
 ---
 title: 'Birthday Bot'
+gitLink: 'https://github.com/HimeEnthusiast/birthday-bot'
 iconImage: '../../images/projects/discordLogo.png'
 screenshots:
     - '/images/projects/screenshots/birthdayboy/1.png'

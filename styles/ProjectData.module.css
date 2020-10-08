@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 550px calc(100% - 550px - 50px);
     grid-gap: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 0;
 }
 
 .title {
@@ -40,7 +40,7 @@
 }
 
 .slide {
-    height: 375px;
+    min-height: 375px;
     width: 100%;
     background-size: contain;
     background-position: center;
@@ -53,18 +53,33 @@
     max-width: 900px;
 }
 
-@media only screen and (max-width: 770px) {
+.projLink {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.projBtn {
+    border: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #D40136;
+    color: #ffffff;
+    border-radius: 7px;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 1020px) {
     .navigation {
         position: relative;
-        background-color: transparent;
-        height: 60px;
         z-index: 100;
     }
 
     .top {
         display: flex;
         flex-direction: column;
-        margin-bottom: 30px;
     }
 
     .content {
@@ -90,6 +105,15 @@
     }
 }
 
+@media only screen and (max-width: 770px) {
+    .navigation {
+        position: relative;
+        background-color: transparent;
+        height: 60px;
+        z-index: 100;
+    }
+}
+
 @media only screen and (max-width: 820px) and (orientation: landscape) {
     .top {
         display: flex;
@@ -101,12 +125,5 @@
         margin: auto;
         width: 100%;
         z-index: 0;
-    }
-
-    .navigation {
-        position: relative;
-        background-color: transparent;
-        height: 60px;
-        z-index: 100;
     }
 }

@@ -1,5 +1,7 @@
 ---
 title: 'Sprout Store'
+liveLink: 'https://www.sprout.isabellapiantoni.tech'
+gitLink: 'https://github.com/HimeEnthusiast/SproutFrontEnd'
 iconImage: '../../images/projects/sproutLogo.png'
 screenshots:
     - '/images/projects/screenshots/sproutstore/1.png'

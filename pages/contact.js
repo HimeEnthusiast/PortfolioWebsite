@@ -27,13 +27,13 @@ export default function Contact() {
 
             <div className={style.rightSection}>
                 <form action="https://send.pageclip.co/Dj1XTDv427IjAF0ZflWjIexTdTdGDEvo" className={style.pageclipForm} method="post">
-                    <label for="name" className={style.inputLabel}>Name</label>
+                    <label htmlFor="name" className={style.inputLabel}>Name</label>
                     <input id={style.name} className={style.input} type="text" name="name" placeholder="Jane Doe" autoFocus required />
                     
-                    <label for="email" className={style.inputLabel}>Email</label>
+                    <label htmlFor="email" className={style.inputLabel}>Email</label>
                     <input id={style.email} className={style.input} type="email" name="email" placeholder="janedoe@example.com" required />
                     
-                    <label for="message" className={style.inputLabel}>Message</label>
+                    <label htmlFor="message" className={style.inputLabel}>Message</label>
                     <textarea id={style.message} className={style.input} name="message" placeholder="Let's work together!" required />
 
                     {/* <!-- This button will have a loading spinner. Keep the inner span for best results. --> */}
