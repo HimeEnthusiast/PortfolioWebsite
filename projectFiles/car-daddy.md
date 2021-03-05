@@ -1,5 +1,5 @@
 ---
-title: 'CarDaddy'
+title: 'Car Daddy'
 liveLink: 'http://capstone.dev.fast.sheridanc.on.ca/grpKIVO/index.html'
 gitLink: ''
 iconImage: '../../images/projects/carDaddyLogo.png'

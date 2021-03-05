@@ -1,5 +1,5 @@
 ---
-title: 'NoteTube'
+title: 'Note Tube'
 gitLink: 'https://github.com/KyleRobertsIO/NoteTube-Android'
 iconImage: '../../images/projects/notetubeLogo.png'
 screenshots:
