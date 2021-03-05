@@ -1,22 +1,21 @@
 ---
 title: 'Car Daddy'
-liveLink: 'http://capstone.dev.fast.sheridanc.on.ca/grpKIVO/index.html'
-gitLink: ''
-iconImage: '../../images/projects/carDaddyLogo.png'
+liveLink: 'https://www.sprout.isabellapiantoni.tech'
+gitLink: 'https://github.com/HimeEnthusiast/SproutFrontEnd'
+iconImage: '../../images/projects/sproutLogo.png'
 screenshots:
-    - '/images/projects/screenshots/cardaddy/1.png'
-    - '/images/projects/screenshots/cardaddy/2.png'
-    - '/images/projects/screenshots/cardaddy/3.png'
-    - '/images/projects/screenshots/cardaddy/4.png'
-    - '/images/projects/screenshots/cardaddy/5.png'
-    - '/images/projects/screenshots/cardaddy/6.png'
-	- '/images/projects/screenshots/cardaddy/7.png'
+    - '/images/projects/screenshots/sproutstore/1.png'
+    - '/images/projects/screenshots/sproutstore/2.png'
+    - '/images/projects/screenshots/sproutstore/3.png'
+    - '/images/projects/screenshots/sproutstore/4.png'
+    - '/images/projects/screenshots/sproutstore/5.png'
+    - '/images/projects/screenshots/sproutstore/6.png'
 shortDesc: 'Full Stack - 2020'
 tags:
-    - SwiftUI
-    - NodeJS
+    - Vue
+    - Spring Boot
 ---
 
-Car Daddy is an iOS app that takes the effort out of maintaining your car. By submitting your VIN (Vehicle Identification Number), CarDaddy can obtain your vehicle's maintenence schedule and use it to keep track of everything your car needs for you. /// Then, users are able to input their own maintenence and repair items, as well as readjust their recommended schedule to fit their own needs. Then, the app will provide you with notifications for when your mentenence is due, allowing user's to essentially "Set it and forget it", letting the app worry about it for you. There are also features that show nearby mechanics in the area, and a dashboard with current mileage. Mileage can be inputted either manually or by taking a picture of your car's odometer. 
+Sprout is a mock e-commerce store that I created in Vue and Spring Boot. Users can browse items and add them to their cart for purchase. The cart will keep track of the users items and the quantities.It is possible to check out as both a guest or a registered user. Registering an account will allow a user to keep an online record of their orders as well as previously used payment methods and addresses if they choose to save those. Otherwise, users will recieve a receipt of their order by email nonetheless. /// I originally began this project because I wanted to learn how to use Vue and Laravel. But, at the same time I was taking a class at school where I learned about Spring Boot. I found it really enjoyable so I wanted to make my own project with it outside of class. So I eventually switched the backend over, while continuing with Vue on the frontend. Sprout has been my largest project so far, with the most time spent on it. It was actually a recreation of a project I made in a C# class, but I lacked the time to do everything I wanted. 
 
-Working on this project was the first time I got to work with a group of people on a serious, long-term project. Our team built the application up from the conceptual phase all the way to an Alpha build that we presented for our faculty's capstone competition. I learned a lot about communicating within a team, handling conflicts, and keeping up with strict deadlines with a group of team mates relying on me. I got to play a full stack role within the project. I designed most of the UI by crafting wireframes, and adjusted them according to my teammates critiques. I also worked with SwiftUI to bring these designes to life and make them interactive. This was the first time I've ever used the framework, so I was learning as I went along. For the backend, I contributed to a gateway service running with NodeJS and Express that funneled all requests to the 3 Spring Boot microservices we had running, into a single endpoint, and allowed these services to interact with eachother. 
+Some of the most prominent issues I faced in development were with frontend design and understanding errors from the web service, as well as porting everything over to the production server. I knew from the beginning that I wanted a full store, but I overlooked a few of the pages that I needed to design, so they ended up looking quite plain and needed to be remade later on. The web service caused a lot of trouble, having to deal with permissions and making sure I was sending data properly for it to work, which ended up becoming a problem again after moving to production because methods that worked on my machine, for some reason stopped working on the server.
